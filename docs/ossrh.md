@@ -80,7 +80,7 @@ Once the last step is successful, the artifacts are uploaded to OSSRH. Next, do 
 
 Once testing of the release artifacts using the staging repository is successful, log back into the [Sonatype Nexux Professional web interface][ossrh-web], find the right repository, and press the `Release` button to promote the artifacts to the Maven Central Repository. The artifacts should become available in a few hours.
 
-### Dropping the release
+### Dropping the release artifacts
 
 If testing was unsuccessful, log back into the [Sonatype Nexux Professional web interface][ossrh-web], find the right repository, and press the `Drop` button to remove the staged artifacts. After resolving the issues found with the release, start the release process over again.
 
