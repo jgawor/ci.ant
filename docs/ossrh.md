@@ -15,13 +15,13 @@ In order to deploy snapshots and releases, you need to configure credential info
   <servers>
     <server>
       <id>sonatype-nexus-snapshots</id>
-      <username>your-jira-id</username>
-      <password>your-jira-pwd</password>
+      <username>ossrh-id</username>
+      <password>ossrh-pwd</password>
     </server>
     <server>
       <id>sonatype-nexus-staging</id>
-      <username>your-jira-id</username>
-      <password>your-jira-pwd</password>
+      <username>ossrh-id</username>
+      <password>ossrh-pwd</password>
     </server>
   </servers>
   ...
@@ -72,7 +72,7 @@ $ mvn release:perform
 ```
 
 Once the last step is successful, the artifacts are uploaded to OSSRH. Next, do the following steps:
- 1. Login into the [Sonatype Nexux Professional web interface][ossrh-web]
+ 1. Login into the [Sonatype Nexux Professional web interface][ossrh-web] using the OSSRH id and password.
  2. Click on `Staging Repositories` and in the search text-box enter `wasdev`. One or more repositories should show up.
  3. Select the right repository and press on the `Close` button. Once the repository is closed (it might take a while), the `Summary` tab for the repository should contain an URL for the Maven repository that contains the published release artifacts. Use that URL to test the release artifacts.
 
