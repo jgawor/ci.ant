@@ -30,7 +30,7 @@ In order to deploy snapshots and releases, you need to configure credential info
 
 ### GPG credentials
 
-In order to publish releases, you will need to configure GPG credentials as well. See the [Working with PGP Signatures][pgp] page for detailed instructions on setting up and working with PGP keys.
+In order to publish releases, you will need to configure GPG credentials as well. See the [Working with PGP Signatures][pgp] page for detailed instructions on setting up and working with PGP keys. Your GPG passphrase needs to be added to the `~/.m2/settings.xml` file. Depending on the platform, you might also need to specify the `gpg.executable` property in case your gpg command is different from `gpg`. 
 
 ```xml
 <settings>
