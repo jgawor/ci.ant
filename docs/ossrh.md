@@ -49,7 +49,7 @@ In order to publish releases, you will need to configure GPG credentials as well
 
 ## Publishing snapshots
 
-Publishing snapshots is very easy. Just execute:
+Publishing snapshots is very easy, just execute:
 
 ```bash
 $ mvn clean deploy
